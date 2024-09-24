@@ -115,11 +115,7 @@ function checkWeather(city) {
       wind.textContent = '';
       humidity.textContent = '';
       weatherType.textContent = '';
-<<<<<<< HEAD
       weatherImg.src = 'src/img/error.jpg'; // Default error image
-=======
-      weatherImg.src = '/src/img/error.png'; // Default error image
->>>>>>> 04d81345cb781f3013b9bc149ab883603e3dbd14
     });
 }
 
@@ -209,7 +205,6 @@ function displayForecast(city) {
 
 function getWeatherIcon(description) {
   const weatherDescription = description.toLowerCase();
-<<<<<<< HEAD
   if (weatherDescription.includes("mist")) return 'src/img/mist.png';
   if (weatherDescription.includes("rain")) return 'src/img/rain.png';
   if (weatherDescription.includes("thunderstorm")) return 'src/img/thunderstorm.png';
@@ -219,17 +214,6 @@ function getWeatherIcon(description) {
   if (weatherDescription.includes("clear")) return 'src/img/clear.png';
   if (weatherDescription.includes("scattered clouds")) return 'src/img/clouds.png';
   return 'src/img/logo.png'; // Default image
-=======
-  if (weatherDescription.includes("mist")) return '../img/mist.png';
-  if (weatherDescription.includes("rain")) return '../img/rain.png';
-  if (weatherDescription.includes("thunderstorm")) return '../img/thunderstorm.png';
-  if (weatherDescription.includes("snow")) return '../img/snow.png';
-  if (weatherDescription.includes("wind")) return '../img/wind.png';
-  if (weatherDescription.includes("drizzle")) return '../img/drizzle.png';
-  if (weatherDescription.includes("clear")) return '../img/clear.png';
-  if (weatherDescription.includes("scattered clouds")) return '../img/clouds.png';
-  return '../img/logo.png'; // Default image
->>>>>>> 04d81345cb781f3013b9bc149ab883603e3dbd14
 }
 
 
