@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Webpage Title</title>
+
+    <!-- Tailwind CSS for styling -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom CSS files (if any) -->
+    <link rel="stylesheet" href="../media.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="bg-gray-100 flex flex-col min-h-screen">
+
+    <!-- Navigation Bar -->
+    <nav class="md:h-16 lg:h-16 bg-blue-500 text-white flex justify-between items-center">
+        <div class="logo flex items-center ml-5 mr-5">
+            <img src="../img/logo.png" alt="Logo" class="h-14 py-2">
+            <span class="ml-3 font-semibold text-xl">SkyScope</span>
+        </div>
+
+        <ul class="nav-menu flex md:ml-5 md:mr-5 items-center">
+            <li class="ml-4 mr-4 hover:text-blue-200 li-underline"><a href="./index.html">Home</a></li>
+            <li class="ml-4 mr-4 hover:text-blue-200 li-underline"><a href="./about.html">About app</a></li>
+            <li class="ml-4 mr-4 hover:text-blue-200 li-underline"><a href="./contact.html">Contact</a></li>
+        </ul>
+        <!-- Mobile menu icons (hidden by default) -->
+        <i class="fa-solid fa-bars" id="open"></i>
+        <i class="fa-solid fa-xmark" id="close"></i>
+    </nav>
+
+    <!-- Main Content Section -->
+    <main class="flex-1">
+        <section class="leading-8 md:mx-10 md:my-10 m-4 flex justify-around items-center flex-wrap">
+            <div class="lg:w-2/3">
+                <h1 class="font-bold text-xl text-blue-900 py-3">About Our Weather Dashboard</h1>
+                <p>Welcome to our all-in-one weather dashboard, your go-to resource for accurate and real-time weather
+                    information. Designed with simplicity and usability in mind, this dashboard provides a clear
+                    snapshot of the
+                    current weather, including temperature, wind speed, and humidity. With this tool, you can easily
+                    determine
+                    how warm or cool it is, gauge the strength of the wind, and understand the level of moisture in the
+                    air—key
+                    factors for planning your day or outdoor activities.
+
+                    Our dashboard is perfect for anyone who needs quick, reliable weather updates, whether you’re
+                    heading out
+                    for a morning jog, planning a weekend getaway, or simply preparing for the day ahead. The interface
+                    is
+                    intuitive and straightforward, ensuring you can access the weather details you need without any
+                    hassle.
+
+                    We also provide additional features like weather forecasts and historical data to help you make even
+                    more
+                    informed decisions. Developed by Mukesh Kumawat, this tool reflects our commitment to providing you
+                    with a
+                    dependable and user-friendly resource. We aim to enhance your daily planning and help you navigate
+                    various
+                    weather conditions with confidence. We hope you find our dashboard both helpful and easy to use,
+                    making your
+                    weather checks as smooth and informative as possible.</p>
+            </div>
+            <div>
+                <img src="../img/logo.png" alt="Dashboard" class="h-60">
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 flex items-center justify-center h-20">
+        <p class="text-white text-sm mx-4">
+            <i class="fa-regular fa-copyright"></i> SkyScope a weather-dashboard web Developed by:
+            <span class="font-semibold">Mukesh Kumawat</span>
+        </p>
+    </footer>
+
+    <!-- JavaScript file -->
+    <script src="../js/apk.js"></script>
+</body>
+
+</html>
